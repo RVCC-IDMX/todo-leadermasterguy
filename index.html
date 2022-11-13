@@ -16,7 +16,7 @@
   <body>
     <h1 class="title">Stuff I need to do</h1>
 
-    <div class="all-tasks">
+    <div class="all-tasks" >
       <h2 class="task-list-title">My lists</h2>
       <ul class="task-list" data-lists>
       </ul>
@@ -27,8 +27,7 @@
           class="new list"
           data-new-list-input
           placeholder="new list name"
-          aria-label="new list name"
-        />
+          aria-label="new list name" />
         <button class="btn create" aria-label="create new list">+</button>
       </form>
     </div>
@@ -40,17 +39,16 @@
       </div>
 
       <div class="todo-body">
-        <div class="tasks" data-tasks>
+        <div class="tasks" data-tasks></div>
 
-        <div class="new-task-creator" data-new-task-form>
-            <form action="">
+        <div class="new-task-creator">
+            <form action="" data-new-task-form>
                 <input 
                   type="text"
                   data-new-task-input
                   class="new task"
                   placeholder="new task name"
-                  aria-label="new task name"
-                />
+                  aria-label="new task name" />
                 <button class="btn create" aria-label="create new task">+</button>
               </form>
         </div>
@@ -62,16 +60,14 @@
       </div>
     </div>
 
-   
     </div>
     <template id="task-template">
-                  <div class="task">
-                <input 
-                  type="checkbox" />
-                <label>
-                  <span class="custom-checkbox"></span>
-                </label>
-              </div>
+      <div class="task">
+            <input type="checkbox"/>
+            <label>
+              <span class="custom-checkbox"></span>
+            </label>
+          </div>
     </template>
   </body>
 </html>
